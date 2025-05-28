@@ -78,7 +78,7 @@ export const Header = () => {
             </div>
             </>
             )}
-            {currentPage === 1 && <Main />}
+            {currentPage === 1 && <Main setCurrentPage={setCurrentPage} />}
             {currentPage === 2 && <Final />}
         </div>
     )

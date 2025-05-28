@@ -11,7 +11,7 @@ const images = [
     { img: massage, title: 'Массажка :)' },
 ]
 
-export const Main = () => {
+export const Main = ({ setCurrentPage }) => {
     return (
         <motion.div
             className={styles.container}
@@ -24,6 +24,7 @@ export const Main = () => {
             <div className={styles.screen}>
                 {images.map(({ img, title }, idx) => (
                     <motion.div
+                        onClick={() => setCurrentPage(prev => prev + 1)}
                         className={styles.block}
                         animate={{ opacity: 1, translateX: 0 }}
                         initial={{ opacity: 0, translateX: (idx + 1) % 2 !== 0 ? '-250px': '250px' }}
