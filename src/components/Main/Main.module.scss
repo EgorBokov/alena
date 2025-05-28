@@ -23,7 +23,7 @@
 
 .block {
   //min-height: 0; /* Важно для корректного растягивания */
-  min-height: 33.33vh;
+  min-height: 28.33vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,7 @@
 .block img {
   width: 100%; /* На всю ширину блока */
   height: 100%; /* Сохраняет пропорции */
-  max-height: 90%;
+  max-height: 75%;
   object-fit: cover; /* Опционально - как изображение должно заполнять пространство */
 }
 
