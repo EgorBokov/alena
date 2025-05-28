@@ -23,19 +23,20 @@
 
 .block {
   //min-height: 0; /* Важно для корректного растягивания */
-  min-height: 28.33vh;
+  max-height: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 10px;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .block img {
   width: 100%; /* На всю ширину блока */
   height: 100%; /* Сохраняет пропорции */
-  max-height: 75%;
+  max-height: 100%;
   object-fit: cover; /* Опционально - как изображение должно заполнять пространство */
 }
 
