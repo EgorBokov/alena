@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.letter {
+  animation: letter-dropdown;
+  animation-duration: .4s;
+}
+
+@keyframes letter-dropdown {
+  from {
+    opacity: 0;
+    scale: 0.3;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0px);
+  }
+}

@@ -1,0 +1,45 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.imageContainer {
+  display: flex;
+  max-width: 390px;
+  justify-content: center;
+}
+
+.imageWrapper {
+
+}
+
+.screen {
+  height: 100vh; /* На всю высоту экрана */
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение */
+}
+
+.block {
+  //min-height: 0; /* Важно для корректного растягивания */
+  min-height: 33.33vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.block img {
+  width: 100%; /* На всю ширину блока */
+  height: 100%; /* Сохраняет пропорции */
+  max-height: 90%;
+  object-fit: cover; /* Опционально - как изображение должно заполнять пространство */
+}
+
+.block p {
+  margin: 10px 0 0 0;
+  /* Стили для текста */
+}
